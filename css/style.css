@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    font-family: "Nunito Sans", serif;
 }
 
 :root {
@@ -12,4 +15,121 @@
     --accent: #9760d7;
 }
 
-body {}
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Manrope", sans-serif;
+}
+
+h1 {
+    margin: 0px;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--background);
+}
+
+.navbar {
+    position: sticky;
+    top: 24px;
+    width: 90%;
+    border-radius: 24px;
+    font-size: 18px;
+    margin: 0px auto;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #b191d680;
+    backdrop-filter: blur(12px);
+}
+
+.logo-navbar {
+    width: 60px;
+    object-fit: cover;
+}
+
+.liens-navbar {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.pullover-navbar {
+    background-color: var(--accent);
+    color: var(--background);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 16px;
+    border: 1px solid transparent;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
+
+    &:hover {
+        background-color: var(--transparent);
+        color: var(--text);
+        border-color: var(--accent);
+        text-decoration: none;
+        padding: 8px 16px;
+        border-radius: 16px;
+    }
+}
+
+.tshirt-navbar {
+    background-color: var(--transparent);
+    color: var(--text);
+    border: 1px solid var(--accent);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 16px;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
+
+
+    &:hover {
+        background-color: var(--accent);
+        color: var(--background);
+        text-decoration: none;
+        padding: 8px 16px;
+        border-radius: 16px;
+        border: 1px solid transparent;
+    }
+}
+
+.contain-cart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.bag-shopping {
+    width: 40px;
+    object-fit: cover;
+}
+
+.cart-number {
+    position: absolute;
+    top: .8em;
+    left: .82em;
+    color: var(--text);
+}
+
+main {
+    margin-top: 40px;
+}
+
+.popular {
+    margin: 0px auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+@media only screen and (max-width: 992px) {}

@@ -3,23 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Forcerion | Vetement</title>
+    <title>Forcerion | Vêtement</title>
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="">
-          <img src="./img/logo.svg" alt="" />
-        </a>
+    <nav class="navbar">
+      <a href="./index.html">
+        <img class="logo-navbar" src="./img/logo.svg" alt="main-menu-logo" />
+      </a>
 
-        <ul>
-          <li>Commander</li>
+      <ul class="liens-navbar">
+        <li><a class="pullover-navbar" href="./pull.html">Pull</a></li>
+        <li><a class="tshirt-navbar" href="./tshirt.html">T-shirt</a></li>
+      </ul>
 
-          <li>A propos</li>
-        </ul>
-      </nav>
-    </header>
+      <a class="contain-cart" href="./cart.html">
+        <img
+          class="bag-shopping"
+          src="./img/bag-shopping.svg"
+          alt="shopping basket"
+        />
+
+        <p class="cart-number">0</p>
+      </a>
+    </nav>
+
+    <main>
+      <div class="popular">
+        <h2 class="title-popular">Pull</h2>
+
+        <p class="price-popular">20.00€</p>
+      </div>
+    </main>
   </body>
 </html>
