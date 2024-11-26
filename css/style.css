@@ -1,3 +1,15 @@
 * {
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
+
+:root {
+    --background: #fafafb;
+    --text: #0c0c0d;
+    --primary: #8460ac;
+    --secondary: #b191d6;
+    --accent: #9760d7;
+}
+
+body {}
