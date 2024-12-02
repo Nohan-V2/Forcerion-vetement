@@ -39,12 +39,13 @@ body {
     position: sticky;
     top: 24px;
     width: 90%;
-    border-radius: 24px;
+    border-radius: 56px;
     font-size: 18px;
     margin: 0px auto;
     padding: 12px 24px;
     display: flex;
     align-items: center;
+    gap: 24px;
     justify-content: space-between;
     background-color: #b191d680;
     backdrop-filter: blur(12px);
@@ -59,14 +60,14 @@ body {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 16px;
 }
 
 .pullover-navbar {
     background-color: var(--accent);
     color: var(--background);
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 4px 16px;
     border-radius: 16px;
     border: 1px solid transparent;
     transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
@@ -75,9 +76,6 @@ body {
         background-color: var(--transparent);
         color: var(--text);
         border-color: var(--accent);
-        text-decoration: none;
-        padding: 8px 16px;
-        border-radius: 16px;
     }
 }
 
@@ -86,7 +84,7 @@ body {
     color: var(--text);
     border: 1px solid var(--accent);
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 4px 16px;
     border-radius: 16px;
     transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
 
@@ -94,29 +92,23 @@ body {
     &:hover {
         background-color: var(--accent);
         color: var(--background);
-        text-decoration: none;
-        padding: 8px 16px;
-        border-radius: 16px;
         border: 1px solid transparent;
     }
 }
 
 .contain-cart {
-    position: relative;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
+    text-decoration: none;
 }
 
 .bag-shopping {
-    width: 40px;
+    width: 24px;
     object-fit: cover;
 }
 
 .cart-number {
-    position: absolute;
-    top: .8em;
-    left: .82em;
     color: var(--text);
 }
 
@@ -130,6 +122,11 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: end;
+}
+
+#g_id_onload {
+    width: 300px;
+    height: 300px;
 }
 
 @media only screen and (max-width: 992px) {}
