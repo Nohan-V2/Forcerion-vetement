@@ -4,145 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forcerion | Vêtement</title>
-    <link
-      rel="shortcut icon"
-      href="./assets/Icon/logo.svg"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <nav>
-      <svg
-        class="hamburger"
-        width="28"
-        height="28"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M4 12H20M4 6H20M4 18H20"
-          stroke="#09090B"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+    <nav class="navbar">
+      <a href="./index.html">
+        <img class="logo-navbar" src="./img/logo.svg" alt="main-menu-logo" />
+      </a>
+
+      <ul class="liens-navbar">
+        <li><a class="pullover-navbar" href="./pull.html">Pull</a></li>
+        <li><a class="tshirt-navbar" href="./tshirt.html">T-shirt</a></li>
+      </ul>
+
+      <a class="contain-cart" href="./cart.html">
+        <p class="cart-number">0</p>
+
+        <img
+          class="bag-shopping"
+          src="./img/bag-shopping.svg"
+          alt="shopping basket"
         />
-      </svg>
-
-      <h1><img class="logo" src="./assets/Icon/logo.svg" alt="Logo" /></h1>
-
-      <div class="nav-wrapper">
-        <a href="#">
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M21.0002 21L16.7002 16.7M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
-              stroke="#09090B"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </a>
-
-        <a href="#">
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M19 14C20.49 12.54 22 10.79 22 8.5C22 7.04131 21.4205 5.64236 20.3891 4.61091C19.3576 3.57946 17.9587 3 16.5 3C14.74 3 13.5 3.5 12 5C10.5 3.5 9.26 3 7.5 3C6.04131 3 4.64236 3.57946 3.61091 4.61091C2.57946 5.64236 2 7.04131 2 8.5C2 10.8 3.5 12.55 5 14L12 21L19 14Z"
-              stroke="#09090B"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-
-          <p>0</p>
-        </a>
-
-        <a href="#">
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M3 6L6 2H18L21 6M3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6M3 6H21M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10"
-              stroke="#09090B"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-
-          <p>0</p>
-        </a>
-      </div>
+      </a>
     </nav>
 
-    <main></main>
+    <main>
+      <div class="popular">
+        <h2 class="title-popular">Pull</h2>
 
-    <footer>
-      <div class="footer-wrapper">
-        <div class="footer-link-wrapper">
-          <ul class="list-links">
-            <h3>Contactez-nous</h3>
-
-            <li>+33 6 51 34 38 96</li>
-            <li>forcerion@gmail.com</li>
-          </ul>
-          <ul class="list-links">
-            <h3>Articles</h3>
-
-            <li>T-shirt</li>
-            <li>Pull</li>
-          </ul>
-          <ul class="list-links">
-            <h3>Companie</h3>
-
-            <li>À propos de nous</li>
-            <li>Retour des collections</li>
-            <li>Carrières</li>
-            <li>Privacy Policy</li>
-            <li>Termes</li>
-          </ul>
-        </div>
-
-        <div class="footer-newsletter">
-          <h3>Guette les dernières sorties</h3>
-
-          <input
-            required
-            type="email"
-            name="newsletter"
-            id="email"
-            placeholder="Entrez votre email"
-          />
-
-          <p>
-            By signing up, you agree to our <a href="#">Privacy Policy</a> and
-            <a href="#">Terms of Service</a>.
-          </p>
-
-          <button>S'inscrire</button>
-        </div>
+        <p class="price-popular">20.00€</p>
       </div>
-
-      <p class="copyright">©Forcerion | 2024</p>
-    </footer>
+    </main>
   </body>
 </html>
