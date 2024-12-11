@@ -17,7 +17,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    overscroll-behavior: smooth;
 }
 
 h1 {
@@ -98,15 +98,22 @@ body {
 nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 16px;
     border-bottom: 1px solid var(--accent);
 }
 
 .hamburger {
-    margin-right: 30%;
+    cursor: pointer;
+}
+
+.links-container {
+    display: none;
+    list-style: none;
 }
 
 .logo {
+    cursor: pointer;
     width: 60px;
     object-fit: cover;
 }
@@ -115,7 +122,6 @@ nav {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-left: auto;
 
     a {
         text-decoration: none;
@@ -123,7 +129,15 @@ nav {
         display: flex;
         align-items: center;
         gap: 4px;
+
+        &:nth-child(2) {
+            display: none;
+        }
     }
+}
+
+.account-svg {
+    display: none;
 }
 
 .best-seller-hero {
@@ -175,13 +189,14 @@ nav {
     }
 }
 
-.photos-wrapper {
+.photo-wrapper {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 
     img {
         width: 33%;
-        height: 100%;
         object-fit: cover;
     }
 }
@@ -253,4 +268,24 @@ footer {
     line-height: 22px;
     letter-spacing: 0;
     text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+
+    .links-container {
+        display: flex;
+        align-items: center;
+        gap: 42px;
+    }
+
+    .acount {
+        display: none;
+    }
+
+    .logo {
+        margin-right: 36px;
+    }
 }
